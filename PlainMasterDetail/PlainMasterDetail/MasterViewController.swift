@@ -28,6 +28,8 @@ class MasterViewController: UITableViewController {
         
         let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "insertNewObject:")
         self.navigationItem.rightBarButtonItem = addButton
+        
+        objects = fetchAllEvents()
     }
     
     override func didReceiveMemoryWarning() {
