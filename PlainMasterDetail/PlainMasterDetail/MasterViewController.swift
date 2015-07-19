@@ -84,6 +84,17 @@ class MasterViewController: UITableViewController {
         }
     }
     
-    
+    func fetchAllEvents() -> [Event] {
+        var error: NSErrorPointer = nil
+        
+        let fetchRequest = NSFetchRequest(entityName: "Event")
+        let results = sharedContext.executeFetchRequest(fetchRequest, error: error)
+        
+        if error != nil {
+            println("error in fetchAllEvents: \(error)")
+        }
+        
+        return results as! [Event]
+    }
 }
 
