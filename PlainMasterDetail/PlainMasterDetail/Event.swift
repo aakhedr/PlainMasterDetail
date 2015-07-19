@@ -28,7 +28,7 @@
 import Foundation
 import CoreData
 
-@objc(Event)
+//@objc(Event)
 
 class Event: NSManagedObject {
 
@@ -41,5 +41,6 @@ class Event: NSManagedObject {
     init(context: NSManagedObjectContext) {
         let entity = NSEntityDescription.entityForName("Event", inManagedObjectContext: context)!
         super.init(entity: entity, insertIntoManagedObjectContext: context)
+        timeStamp = NSDate()
     }
 }
