@@ -39,6 +39,9 @@ class MasterViewController: UITableViewController {
         objects.insert(Event(), atIndex: 0)
         let indexPath = NSIndexPath(forRow: 0, inSection: 0)
         self.tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
+        
+        let eventToBeAdded = Event(context: sharedContext)
+        CoreDataStackManager.sharedInstance().saveContext()
     }
     
     // MARK: - Segues
