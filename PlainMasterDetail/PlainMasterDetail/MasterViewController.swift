@@ -7,11 +7,15 @@
 //
 
 import UIKit
+import CoreData
 
 class MasterViewController: UITableViewController {
     
     var objects = NSMutableArray()
     
+    lazy var sharedContext: NSManagedObjectContext = {
+        return CoreDataStackManager.sharedInstance().managedObjectContext!
+    }()
     
     override func awakeFromNib() {
         super.awakeFromNib()
