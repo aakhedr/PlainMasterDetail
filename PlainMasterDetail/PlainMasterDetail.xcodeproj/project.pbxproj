@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3666DFB71B5AFCAC00848C7C /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3666DFB51B5AFCAC00848C7C /* Model.xcdatamodeld */; };
 		4D155D501ABA5997001664B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D155D4F1ABA5997001664B9 /* AppDelegate.swift */; };
 		4D155D551ABA5997001664B9 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D155D541ABA5997001664B9 /* MasterViewController.swift */; };
 		4D155D571ABA5997001664B9 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D155D561ABA5997001664B9 /* DetailViewController.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3666DFB61B5AFCAC00848C7C /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		4D155D4A1ABA5997001664B9 /* PlainMasterDetail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlainMasterDetail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D155D4E1ABA5997001664B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D155D4F1ABA5997001664B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 		4D155D4C1ABA5997001664B9 /* PlainMasterDetail */ = {
 			isa = PBXGroup;
 			children = (
+				3666DFB51B5AFCAC00848C7C /* Model.xcdatamodeld */,
 				4D155D761ABA5C22001664B9 /* CoreDataStackManager.swift */,
 				4D155D741ABA59E1001664B9 /* Event.swift */,
 				4D155D541ABA5997001664B9 /* MasterViewController.swift */,
@@ -226,6 +229,7 @@
 				4D155D571ABA5997001664B9 /* DetailViewController.swift in Sources */,
 				4D155D771ABA5C22001664B9 /* CoreDataStackManager.swift in Sources */,
 				4D155D751ABA59E1001664B9 /* Event.swift in Sources */,
+				3666DFB71B5AFCAC00848C7C /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +421,7 @@
 				4D155D701ABA5998001664B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4D155D711ABA5998001664B9 /* Build configuration list for PBXNativeTarget "PlainMasterDetailTests" */ = {
 			isa = XCConfigurationList;
@@ -425,8 +430,22 @@
 				4D155D731ABA5998001664B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3666DFB51B5AFCAC00848C7C /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3666DFB61B5AFCAC00848C7C /* Model.xcdatamodel */,
+			);
+			currentVersion = 3666DFB61B5AFCAC00848C7C /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4D155D421ABA5997001664B9 /* Project object */;
 }
